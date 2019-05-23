@@ -1,42 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BLUEASY css-grid template</title>
 
     <!-- normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
     <!-- fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
     <!-- styles -->
-    <link rel="stylesheet" href="css/main.css">
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <header class="grid">
-            <div class="nav-wrapper">
-                <nav class='nav-main wrapper'>
-                    <a href="#" class="nav-logo">blu<span>e</span>asy</a>
-                    <ul class="nav-menu">
-                        <li class="nav-item"><a href="#">home</a></li>
-                        <li class="nav-item"><a href="#">services</a></li>
-                        <li class="nav-item"><a href="#">features</a></li>
-                        <li class="nav-item"><a href="#">portfolio</a></li>
-                        <li class="nav-item"><a href="#">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="slogan">
-                <p>“  I’m looking for the unexpected.</p>
-                <p>I’m looking for things I’ve never seen before.  ”</p>
-            </div>
+      <div class="nav-wrapper">
+        <nav class="nav-main wrapper">
+          <a href="#" class="nav-logo">blu<span>e</span>asy</a>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#">home</a></li>
+            <li class="nav-item"><a href="#">services</a></li>
+            <li class="nav-item"><a href="#">features</a></li>
+            <li class="nav-item"><a href="#">portfolio</a></li>
+            <li class="nav-item"><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero">
+        <p>“ I’m looking for the unexpected.</p>
+        <p>I’m looking for things I’ve never seen before. ”</p>
+      </div>
     </header>
-    
-</body>
+
+    <section class="services">
+      <h1 class="wrapper">services</h1>
+      <ul class=" wrapper grid">
+        <li>
+          <img src="./img/coffee-icon.png" alt="coffee" />
+          <h2>coffee</h2>
+          <p>
+            Apple pie icing sweet. Brownie jelly-o applicake applicake sweet
+            roll liquorice bear claw. Jujubes carrot cake cotton candy sweet
+            tart brownie. Tiramisu applicake jujubes.
+          </p>
+        </li>
+        <li>
+          <img src="./img/instant-icon.png" alt="instant" />
+          <h2>instant</h2>
+          <p>
+            Apple pie icing sweet. Brownie jelly-o applicake applicake sweet
+            roll liquorice bear claw. Jujubes carrot cake cotton candy sweet
+            tart brownie. Tiramisu applicake jujubes.
+          </p>
+        </li>
+        <li>
+          <img src="./img/serious-icon.png" alt="serious" />
+          <h2>serious</h2>
+          <p>
+            Apple pie icing sweet. Brownie jelly-o applicake applicake sweet
+            roll liquorice bear claw. Jujubes carrot cake cotton candy sweet
+            tart brownie. Tiramisu applicake jujubes.
+          </p>
+        </li>
+        <li>
+          <img src="./img/frame-icon.png" alt="frame" />
+          <h2>frame</h2>
+          <p>
+            Apple pie icing sweet. Brownie jelly-o applicake applicake sweet
+            roll liquorice bear claw. Jujubes carrot cake cotton candy sweet
+            tart brownie. Tiramisu applicake jujubes.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="portfolio">
+        <nav class="portfolio-nav wrapper">
+          <h1>portfolio</h1>
+          <ul class="portfolio-nav-menu">
+            <li class="portfolio-menu-item"><a href="#">all</a></li>
+            <li class="portfolio-menu-item"><a href="#">panoramas</a></li>
+            <li class="portfolio-menu-item"><a href="#">portraits</a></li>
+            <li class="portfolio-menu-item"><a href="#">macro</a></li>
+            <li class="portfolio-menu-item"><a href="#">journal</a></li>
+          </ul>
+        </nav>
+        <ul class="wrapper grid portfolio-gallery">
+            <li class="gallery-item">
+              <img src="./img/portfolio-1.png"></img>
+            </li>
+            <li class="gallery-item">
+              <img src="./img/portfolio-2.png"></img>
+            </li>
+            <li class="gallery-item">
+              <img src="./img/portfolio-3.png"></img>
+            </li>
+            <li class="gallery-item">
+              <img src="./img/portfolio-4.png"></img>
+            </li>
+            <li class="gallery-item">
+              <img src="./img/portfolio-5.png"></img>
+            </li>
+            <li class="gallery-item">
+              <img src="./img/portfolio-6.png"></img>
+            </li>
+            <li class="gallery-item">
+              <img src="./img/portfolio-7.png"></img>
+            </li>
+            <li class="gallery-item">
+              <img src="./img/portfolio-8.png"></img>
+            </li>
+        </ul>
+    </section>
+  </body>
 </html>

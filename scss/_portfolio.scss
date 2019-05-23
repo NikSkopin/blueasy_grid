@@ -1,0 +1,92 @@
+.portfolio {
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.4375rem 0;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $secondary-color;
+
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 300;
+      text-transform: uppercase;
+
+      @include bottom-brdr;
+      &::before {
+        border-bottom: 2px solid $secondary-color;
+      }
+    }
+
+    &-menu {
+      display: flex;
+      width: 45%;
+      justify-content: space-between;
+
+      .portfolio-menu-item {
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $secondary-color;
+
+        a {
+          padding: 10px;
+          border: 2px solid transparent;
+
+          &:hover {
+            color: $accent-color;
+            border: 2px solid $accent-color;
+          }
+        }
+
+        a:visited {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  &-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 3.75rem;
+  }
+}
+
+.gallery-item {
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $secondary-color;
+    opacity: 0.9;
+    z-index: 0;
+    display: none;
+  }
+
+  &:after {
+    content: '\002b';
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 4.5rem;
+    font-weight: 300;
+    display: none;
+  }
+  &:hover:before {
+    display: block;
+  }
+  &:hover:after {
+    display: block;
+  }
+}

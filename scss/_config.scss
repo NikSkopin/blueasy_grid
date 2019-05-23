@@ -2,8 +2,21 @@ $primary-color: #ffffff;
 $secondary-color: #515f67;
 $accent-color: #4bcaff;
 
-$primary-font: 'Segoe UI', Tahoma, sans-serif;
+$primary-font: "Segoe UI", Tahoma, sans-serif;
 
 @mixin easeOut {
-    transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+@mixin bottom-brdr {
+  position: relative;
+  padding-bottom: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2.8125rem;
+  }
 }
