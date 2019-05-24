@@ -2,7 +2,7 @@ $primary-color: #ffffff;
 $secondary-color: #515f67;
 $accent-color: #4bcaff;
 
-$primary-font: "Segoe UI", Tahoma, sans-serif;
+$primary-font: 'Segoe UI', Tahoma, sans-serif;
 
 @mixin easeOut {
   transition: all 0.3s ease-out;
@@ -13,10 +13,16 @@ $primary-font: "Segoe UI", Tahoma, sans-serif;
   padding-bottom: 10px;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 2.8125rem;
   }
+}
+
+@mixin h1 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }

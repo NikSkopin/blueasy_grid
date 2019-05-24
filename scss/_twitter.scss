@@ -1,0 +1,32 @@
+.twitter {
+  background-color: $accent-color;
+  padding: 4.6875rem 0;
+
+  h1 {
+    @include h1;
+    @include bottom-brdr;
+    color: $primary-color;
+
+    &:before {
+      border: 1px solid $primary-color;
+    }
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: $primary-color;
+      font-size: 1.875rem;
+    }
+  }
+
+  p {
+    color: $primary-color;
+    font-size: 1.75rem;
+    font-weight: 300;
+    width: 80%;
+  }
+}

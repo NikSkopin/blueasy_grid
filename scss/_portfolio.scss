@@ -9,10 +9,7 @@
     color: $secondary-color;
 
     h1 {
-      font-size: 1.875rem;
-      font-weight: 300;
-      text-transform: uppercase;
-
+      @include h1;
       @include bottom-brdr;
       &::before {
         border-bottom: 2px solid $secondary-color;
@@ -88,5 +85,13 @@
   }
   &:hover:after {
     display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &-video {
+    padding-top: 3.125rem;
   }
 }

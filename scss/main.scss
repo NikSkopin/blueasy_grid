@@ -1,7 +1,10 @@
-@import "config";
-@import "header";
-@import "services";
-@import "portfolio";
+@import 'config';
+@import 'header';
+@import 'services';
+@import 'portfolio';
+@import 'features';
+@import 'twitter';
+@import 'whois';
 
 * {
   box-sizing: border-box;

@@ -1,0 +1,29 @@
+.features {
+  background-color: $secondary-color;
+
+  &-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 4.6875rem 0;
+
+    h1 {
+      @include h1;
+      color: $primary-color;
+    }
+
+    p {
+      color: $primary-color;
+      font-size: 0.875rem;
+      font-weight: 300;
+      width: 80%;
+      margin: 1.875rem 0;
+    }
+  }
+
+  &-button {
+    color: $primary-color;
+    background-color: $secondary-color;
+    padding: 0.9375rem 2.5rem;
+    border: 2px solid $primary-color;
+  }
+}

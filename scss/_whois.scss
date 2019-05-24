@@ -1,0 +1,49 @@
+.whois {
+  background-color: $secondary-color;
+  position: relative;
+  padding: 55px 0;
+  color: $primary-color;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/whois-bg.png');
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  h1 {
+    @include h1;
+    @include bottom-brdr;
+
+    &:before {
+      border: 1px solid $primary-color;
+    }
+  }
+
+  &-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      line-height: 24px;
+    }
+
+    a {
+      color: $primary-color;
+      font-size: 30px;
+      font-weight: 400;
+      margin-right: 10px;
+      padding: 20px;
+      border: 2px solid #ffffff;
+      display: inline-block;
+    }
+  }
+}

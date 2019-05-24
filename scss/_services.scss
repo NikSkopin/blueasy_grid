@@ -2,20 +2,12 @@
   background-color: $accent-color;
 
   h1 {
-    margin-top: 4.6875rem;
-    font-size: 1.875rem;
-    font-weight: 300;
     color: $primary-color;
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 10px;
+    @include h1;
+    @include bottom-brdr;
+    margin-top: 4.6875rem;
 
     &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 2.8125rem;
       border-bottom: 2px solid #fff;
     }
   }
