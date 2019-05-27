@@ -300,7 +300,9 @@ header .hero p {
   color: #ffffff;
   background-color: #515f67;
   padding: 0.9375rem 2.5rem;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .twitter {
@@ -413,6 +415,156 @@ header .hero p {
   padding: 20px;
   border: 2px solid #ffffff;
   display: inline-block;
+}
+
+.contact {
+  background-color: #515f67;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.contact:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/contact-bg.png);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.contact form {
+  -ms-grid-columns: ([col-start] 1fr)[12];
+      grid-template-columns: repeat(12, [col-start] 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 0.9375rem;
+  margin-top: 3.125rem;
+}
+
+.contact form h1 {
+  grid-column: col-start 1 / span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  place-self: start center;
+  margin: 0;
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.contact form h1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2.8125rem;
+}
+
+.contact form h1::before {
+  border-bottom: 2px solid #fff;
+}
+
+.contact form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 5rem;
+}
+
+.contact form legend {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.contact form p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: initial;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  place-self: center start;
+}
+
+.contact form input {
+  width: 100%;
+  height: 90%;
+  border: 1px solid #fff;
+  margin-top: 0.3125rem;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 0.625rem;
+}
+
+.contact form textarea {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #ffffff;
+  width: 100%;
+  resize: none;
+  max-height: 9.375rem;
+  margin-top: 0.3125rem;
+}
+
+.contact form .fullname {
+  grid-column: col-start 1 / span 5;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.contact form .email {
+  grid-column: col-start 1 / span 5;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.contact form .message {
+  grid-column: col-start 1 / span 12;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4 / 6;
+}
+
+.contact form button {
+  grid-column: col-start 1 / span 4;
+  -ms-grid-row: 6;
+  grid-row: 6;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1.25rem 0;
+  border: none;
+  background-color: #4bcaff;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-top: 2.1875rem;
+}
+
+.contact form p:first-of-type {
+  grid-column: col-start 7 / span 6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.contact form p:last-of-type {
+  grid-column: col-start 7 / span 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
 }
 
 * {
