@@ -13,7 +13,7 @@ header {
 }
 
 header::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -31,7 +31,7 @@ header .nav-wrapper {
 }
 
 header .nav-wrapper::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -84,6 +84,8 @@ header .nav-menu .nav-item a {
 header .nav-menu .nav-item a:hover {
   color: #4bcaff;
   border: 2px solid #4bcaff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 header .hero {
@@ -208,6 +210,8 @@ header .hero p {
 .portfolio-nav-menu .portfolio-menu-item a:hover {
   color: #4bcaff;
   border: 2px solid #4bcaff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .portfolio-nav-menu .portfolio-menu-item a:visited {
@@ -303,6 +307,13 @@ header .hero p {
   border: 1px solid #ffffff;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.features-button:hover {
+  color: #4bcaff;
+  border: 1px solid #4bcaff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .twitter {
@@ -417,12 +428,20 @@ header .hero p {
   display: inline-block;
 }
 
+.whois-wrapper a:hover {
+  border: 2px solid #4bcaff;
+  color: #4bcaff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 .contact {
   background-color: #515f67;
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
   z-index: 1;
+  padding: 3.125rem 0;
 }
 
 .contact:before {
@@ -447,7 +466,6 @@ header .hero p {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 0.9375rem;
-  margin-top: 3.125rem;
 }
 
 .contact form h1 {
@@ -551,6 +569,13 @@ header .hero p {
   font-size: 0.875rem;
   font-weight: 700;
   margin-top: 2.1875rem;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background-color: #32c2ff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .contact form p:first-of-type {
@@ -565,6 +590,31 @@ header .hero p {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
+}
+
+.footer {
+  background-color: #353f47;
+  padding: 45px 0;
+}
+
+.footer ul {
+  opacity: 0.5;
+}
+
+.footer ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0 20px;
+  border-right: 1px solid #ffffff;
+}
+
+.footer ul li a:visited {
+  color: #ffffff;
+}
+
+.footer ul li:last-child {
+  border-right: none;
 }
 
 * {

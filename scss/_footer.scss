@@ -1,0 +1,23 @@
+.footer {
+  background-color: #353f47;
+  padding: 45px 0;
+
+  ul {
+    opacity: 0.5;
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      color: $primary-color;
+      padding: 0 20px;
+      border-right: 1px solid $primary-color;
+
+      a:visited {
+        color: $primary-color;
+      }
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+  }
+}

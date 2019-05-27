@@ -27,5 +27,11 @@
     border: 1px solid $primary-color;
     text-transform: uppercase;
     cursor: pointer;
+
+    &:hover {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+      @include easeOut;
+    }
   }
 }

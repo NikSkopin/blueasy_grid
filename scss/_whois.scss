@@ -44,6 +44,12 @@
       padding: 20px;
       border: 2px solid #ffffff;
       display: inline-block;
+
+      &:hover {
+        border: 2px solid $accent-color;
+        color: $accent-color;
+        @include easeOut;
+      }
     }
   }
 }

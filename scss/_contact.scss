@@ -4,6 +4,7 @@
   color: $primary-color;
   position: relative;
   z-index: 1;
+  padding: 3.125rem 0;
 
   &:before {
     content: '';
@@ -23,7 +24,6 @@
     grid-template-rows: repeat(6, 1fr);
     align-items: center;
     row-gap: 0.9375rem;
-    margin-top: 3.125rem;
 
     h1 {
       grid-column: col-start 1 / span 2;
@@ -108,6 +108,12 @@
       font-size: 0.875rem;
       font-weight: 700;
       margin-top: 2.1875rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($accent-color, 5%);
+        @include easeOut;
+      }
     }
 
     p:first-of-type {
