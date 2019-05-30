@@ -53,6 +53,10 @@ header {
       span {
         color: $accent-color;
       }
+
+      &:visited {
+        color: $primary-color;
+      }
     }
 
     &-menu {
@@ -67,6 +71,10 @@ header {
         a {
           padding: 10px;
           border: 2px solid transparent;
+
+          &:visited {
+            color: $primary-color;
+          }
 
           &:hover {
             color: $accent-color;

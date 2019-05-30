@@ -1,7 +1,7 @@
 .whois {
   background-color: $secondary-color;
   position: relative;
-  padding: 55px 0;
+  padding: 3.4375rem 0;
   color: $primary-color;
   z-index: 1;
 
@@ -13,6 +13,9 @@
     left: 0;
     right: 0;
     background-image: url('../img/whois-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     opacity: 0.5;
     z-index: -1;
   }
@@ -30,18 +33,18 @@
     grid-template-columns: repeat(2, 1fr);
 
     p {
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 400;
-      margin-bottom: 40px;
-      line-height: 24px;
+      margin-bottom: 2.5rem;
+      line-height: 1.5rem;
     }
 
     a {
       color: $primary-color;
-      font-size: 30px;
+      font-size: 1.875rem;
       font-weight: 400;
-      margin-right: 10px;
-      padding: 20px;
+      margin-right: 0.625rem;
+      padding: 1.25rem;
       border: 2px solid #ffffff;
       display: inline-block;
 

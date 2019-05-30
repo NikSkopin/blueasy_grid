@@ -65,6 +65,10 @@ header .nav-logo span {
   color: #4bcaff;
 }
 
+header .nav-logo:visited {
+  color: #ffffff;
+}
+
 header .nav-menu {
   font-size: 0.875rem;
 }
@@ -79,6 +83,10 @@ header .nav-menu .nav-item {
 header .nav-menu .nav-item a {
   padding: 10px;
   border: 2px solid transparent;
+}
+
+header .nav-menu .nav-item a:visited {
+  color: #ffffff;
 }
 
 header .nav-menu .nav-item a:hover {
@@ -189,7 +197,10 @@ header .hero p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 45%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -369,7 +380,7 @@ header .hero p {
 .whois {
   background-color: #515f67;
   position: relative;
-  padding: 55px 0;
+  padding: 3.4375rem 0;
   color: #ffffff;
   z-index: 1;
 }
@@ -382,6 +393,9 @@ header .hero p {
   left: 0;
   right: 0;
   background-image: url("../img/whois-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   opacity: 0.5;
   z-index: -1;
 }
@@ -412,18 +426,18 @@ header .hero p {
 }
 
 .whois-wrapper p {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  margin-bottom: 40px;
-  line-height: 24px;
+  margin-bottom: 2.5rem;
+  line-height: 1.5rem;
 }
 
 .whois-wrapper a {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
-  margin-right: 10px;
-  padding: 20px;
+  margin-right: 0.625rem;
+  padding: 1.25rem;
   border: 2px solid #ffffff;
   display: inline-block;
 }
@@ -442,6 +456,8 @@ header .hero p {
   position: relative;
   z-index: 1;
   padding: 3.125rem 0;
+  background-position: center;
+  background-size: cover;
 }
 
 .contact:before {
@@ -654,5 +670,241 @@ ul {
 .wrapper {
   width: 80%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 501px) and (max-width: 968px) {
+  .wrapper {
+    width: 90%;
+  }
+  header .nav-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 0;
+    font-size: 1.275rem;
+  }
+  header .nav-menu .nav-item {
+    margin: 0;
+  }
+  .portfolio-nav {
+    padding: 2rem 0;
+  }
+  .portfolio-gallery {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .features-wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .features-button {
+    margin-bottom: 20px;
+  }
+  .whois-wrapper a {
+    font-size: 1.5625rem;
+    padding: 0.625rem;
+  }
+  .contact form {
+    -ms-grid-rows: (1fr)[7];
+        grid-template-rows: repeat(7, 1fr);
+    row-gap: 0;
+  }
+  .contact form input {
+    margin: 0;
+    padding: 0;
+  }
+  .contact form textarea {
+    margin: 0;
+  }
+  .contact form .fullname {
+    grid-column: col-start 1 / span 5;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .contact form .email {
+    grid-column: col-start 1 / span 5;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .contact form .message {
+    grid-column: col-start 1 / span 12;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+  }
+  .contact form button {
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  .contact form p:first-of-type {
+    display: none;
+  }
+  .contact form p:last-of-type {
+    grid-column: col-start 7 / span 5;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 90%;
+  }
+  header .nav-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.7rem 0;
+    font-size: 1.275rem;
+  }
+  header .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  header .nav-menu .nav-item {
+    margin: 5px 0;
+  }
+  header .nav-menu .nav-item a {
+    border: none;
+  }
+  header .nav-menu .nav-item a:hover {
+    border: none;
+  }
+  header .hero {
+    font-size: 22px;
+  }
+  .services ul {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+  .portfolio-nav {
+    padding: 2rem 0;
+  }
+  .portfolio-nav-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .portfolio-nav-menu .portfolio-menu-item {
+    margin: 2px 0;
+  }
+  .portfolio-nav-menu .portfolio-menu-item a {
+    border: none;
+  }
+  .portfolio-nav-menu .portfolio-menu-item a:hover {
+    color: #4bcaff;
+    border: none;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .portfolio-gallery {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio .gallery-item::before {
+    display: none;
+  }
+  .portfolio .gallery-item::after {
+    display: none;
+  }
+  .features-wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .features-wrapper h1 {
+    font-size: 1.65rem;
+  }
+  .features-wrapper iframe {
+    display: none;
+  }
+  .features-button {
+    margin-bottom: 20px;
+  }
+  .whois-wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .whois-wrapper a {
+    font-size: 1.5625rem;
+    padding: 0.625rem;
+  }
+  .contact form {
+    -ms-grid-columns: ([col-start] 1fr)[6];
+        grid-template-columns: repeat(6, [col-start] 1fr);
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+    row-gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact form h1 {
+    grid-column: col-start 1 / span 3;
+  }
+  .contact form input {
+    margin: 0;
+    padding: 0;
+  }
+  .contact form textarea {
+    margin: 0;
+  }
+  .contact form .fullname {
+    grid-column: col-start 1 / span 6;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .contact form .email {
+    grid-column: col-start 1 / span 6;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .contact form .message {
+    grid-column: col-start 1 / span 6;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+  }
+  .contact form button {
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  .contact form p:first-of-type {
+    display: none;
+  }
+  .contact form p:last-of-type {
+    grid-column: col-start 1 / span 6;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    grid-row: 7 / 9;
+  }
+  .footer ul {
+    font-size: 12px;
+  }
+  .footer ul li {
+    padding: 0 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

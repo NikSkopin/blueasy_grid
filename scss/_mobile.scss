@@ -1,0 +1,255 @@
+@include mediaMd {
+  .wrapper {
+    width: 90%;
+  }
+
+  header {
+    .nav {
+      &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        font-size: 1.275rem;
+      }
+
+      &-menu {
+        .nav-item {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    &-nav {
+      padding: 2rem 0;
+    }
+
+    &-gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .features {
+    &-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-button {
+      margin-bottom: 20px;
+    }
+  }
+
+  .whois {
+    &-wrapper {
+      a {
+        font-size: 1.5625rem;
+        padding: 0.625rem;
+      }
+    }
+  }
+
+  .contact {
+    form {
+      grid-template-rows: repeat(7, 1fr);
+
+      row-gap: 0;
+
+      input {
+        margin: 0;
+        padding: 0;
+      }
+      textarea {
+        margin: 0;
+      }
+      .fullname {
+        grid-column: col-start 1 / span 5;
+        grid-row: 2;
+      }
+
+      .email {
+        grid-column: col-start 1 / span 5;
+        grid-row: 3;
+      }
+
+      .message {
+        grid-column: col-start 1 / span 12;
+        grid-row: 4 / 5;
+      }
+      button {
+        grid-row: 6;
+      }
+      p:first-of-type {
+        display: none;
+      }
+
+      p:last-of-type {
+        grid-column: col-start 7 / span 5;
+        grid-row: 3;
+      }
+    }
+  }
+}
+
+@include mediaSm {
+  .wrapper {
+    width: 90%;
+  }
+
+  header {
+    .nav {
+      &-main {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 0;
+        font-size: 1.275rem;
+      }
+
+      &-menu {
+        display: flex;
+        flex-flow: column;
+        .nav-item {
+          margin: 5px 0;
+
+          a {
+            border: none;
+            &:hover {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+    .hero {
+      font-size: 22px;
+    }
+  }
+
+  .services {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 20px;
+    }
+  }
+
+  .portfolio {
+    &-nav {
+      padding: 2rem 0;
+
+      &-menu {
+        flex-flow: column;
+
+        .portfolio-menu-item {
+          margin: 2px 0;
+          a {
+            border: none;
+
+            &:hover {
+              color: $accent-color;
+              border: none;
+              @include easeOut;
+            }
+          }
+        }
+      }
+    }
+
+    &-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-item {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .features {
+    &-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+
+      h1 {
+        font-size: 1.65rem;
+      }
+      iframe {
+        display: none;
+      }
+    }
+    &-button {
+      margin-bottom: 20px;
+    }
+  }
+
+  .whois {
+    &-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+
+      a {
+        font-size: 1.5625rem;
+        padding: 0.625rem;
+      }
+    }
+  }
+
+  .contact {
+    form {
+      grid-template-columns: repeat(6, [col-start] 1fr);
+
+      grid-template-rows: repeat(8, 1fr);
+
+      row-gap: 0;
+      align-items: center;
+
+      h1 {
+        grid-column: col-start 1 / span 3;
+      }
+
+      input {
+        margin: 0;
+        padding: 0;
+      }
+      textarea {
+        margin: 0;
+      }
+      .fullname {
+        grid-column: col-start 1 / span 6;
+        grid-row: 2;
+      }
+
+      .email {
+        grid-column: col-start 1 / span 6;
+        grid-row: 3;
+      }
+
+      .message {
+        grid-column: col-start 1 / span 6;
+        grid-row: 4 / 5;
+      }
+      button {
+        grid-row: 6;
+      }
+      p:first-of-type {
+        display: none;
+      }
+
+      p:last-of-type {
+        grid-column: col-start 1 / span 6;
+        grid-row: 7 / 9;
+      }
+    }
+  }
+
+  .footer {
+    ul {
+      font-size: 12px;
+      li {
+        padding: 0 10px;
+      }
+    }
+  }
+}
