@@ -30,16 +30,13 @@
         a {
           padding: 10px;
           border: 2px solid transparent;
+          color: $secondary-color;
 
           &:hover {
             color: $accent-color;
             border: 2px solid $accent-color;
             @include easeOut;
           }
-        }
-
-        a:visited {
-          color: $secondary-color;
         }
       }
     }
@@ -57,7 +54,7 @@
   z-index: 1;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -70,10 +67,11 @@
   }
 
   &:after {
-    content: '\002b';
+    content: "\002b";
     position: absolute;
-    top: 33%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
     margin: 0;
     padding: 0;
